@@ -2,7 +2,7 @@
 include("conexion.php");
 
 if (isset($_POST['nombre'])) {
-    $nombre = pg_escape_string($_POST['nombre']);
+    $nombre = pg_escape_string($conexion, $_POST['nombre']);
 
     // Obtener el último número secuencial
     $res = pg_query($conexion, "SELECT MAX(cod_est) AS max_cod FROM estudiante");
