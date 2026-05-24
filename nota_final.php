@@ -142,7 +142,7 @@ tr:hover{
 <body>
 
 <div class="header">
-📄 Notas Finales
+Notas Finales
 </div>
 
 <div class="container">
@@ -150,7 +150,7 @@ tr:hover{
 <div style="margin-bottom:20px;">
 
 <a href="notas_registradas.php">
-    <button class="btn">⬅ Volver</button>
+    <button class="btn">Volver</button>
 </a>
 
 </div>

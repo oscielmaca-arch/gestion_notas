@@ -170,7 +170,7 @@ tr:hover{
 <body>
 
 <div class="header">
-📋 Notas Registradas
+Notas Registradas
 </div>
 
 <div class="container">
@@ -179,7 +179,7 @@ tr:hover{
 <div class="top-buttons">
 
     <a href="notas.php">
-        <button class="btn">⬅ Volver</button>
+        <button class="btn">Volver</button>
     </a>
 
     <?php if($selected_course): ?>
@@ -256,7 +256,7 @@ echo $c['nomb_cur']." - ".$c['year']."/".$c['periodo'];
     <th>Cohorte 1</th>
     <th>Cohorte 2</th>
     <th>Cohorte 3</th>
-    <th>⚙ Acción</th>
+    <th>Acción</th>
 </tr>
 
 <?php foreach($datos as $d):

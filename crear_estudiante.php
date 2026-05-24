@@ -19,7 +19,7 @@ if (isset($_POST['nombre'])) {
 }
 ?>
 
-<h2>➕ Crear Estudiante</h2>
+<h2>Crear Estudiante</h2>
 <form method="POST">
     Nombre: <input type="text" name="nombre" required>
     <button type="submit">Guardar</button>

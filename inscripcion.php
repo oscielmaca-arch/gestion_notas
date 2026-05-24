@@ -13,7 +13,7 @@ if (isset($_POST['guardar'])) {
     pg_query($conexion, "INSERT INTO inscripciones (cod_cur, cod_est, year, periodo)
     VALUES ($cod_cur, $cod_est, $year, '$periodo')");
 
-    echo "<div style='color:green;'>✅ Inscripción guardada</div>";
+    echo "<div style='color:green;'>Inscripción guardada</div>";
 
 }
 ?>
@@ -129,7 +129,7 @@ Inscripción de Estudiantes
 <div class="top-buttons">
 
     <a href="index.php">
-        <button class="btn">🏠 Menú</button>
+        <button class="btn">Menú</button>
     </a>
 
     <a href="inscripciones_lista.php">
@@ -142,7 +142,7 @@ Inscripción de Estudiantes
 
 <?php
 if (isset($_POST['guardar'])) {
-    echo "<div class='success'>✅ Inscripción guardada correctamente</div>";
+    echo "<div class='success'>Inscripción guardada correctamente</div>";
 }
 ?>
 

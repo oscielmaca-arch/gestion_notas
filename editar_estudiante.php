@@ -26,7 +26,7 @@ if(!$estudiante){
 }
 ?>
 
-<h2>✏️ Editar Estudiante</h2>
+<h2>Editar Estudiante</h2>
 <form method="POST">
     Nombre:
     <input type="text" name="nomb_est" value="<?php echo htmlspecialchars($estudiante['nomb_est']); ?>" required>

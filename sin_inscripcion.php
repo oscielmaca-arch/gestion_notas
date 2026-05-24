@@ -11,9 +11,9 @@ WHERE i.cod_est IS NULL
 $result = pg_query($conexion, $query);
 ?>
 
-<h2>⚠ Estudiantes sin inscripción</h2>
+<h2>Estudiantes sin inscripción</h2>
 
-<a href="index.php"><button>🏠 Menú</button></a>
+<a href="index.php"><button>Menú</button></a>
 
 <table border="1">
 <tr><th>Estudiante</th></tr>

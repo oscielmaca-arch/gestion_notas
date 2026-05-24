@@ -105,7 +105,7 @@ label{
 <body>
 
 <div class="header">
-📚 Agregar Curso
+Agregar Curso
 </div>
 
 <div class="container">
@@ -113,11 +113,11 @@ label{
 <div class="top-buttons">
 
     <a href="index.php">
-        <button class="btn">🏠 Menú</button>
+        <button class="btn">Menú</button>
     </a>
 
     <a href="cursos.php">
-        <button class="btn">⬅ Volver</button>
+        <button class="btn">Volver</button>
     </a>
 
 </div>
@@ -126,7 +126,7 @@ label{
 
 <form method="POST">
 
-<label>📘 Nombre del curso</label>
+<label>Nombre del curso</label>
 
 <input
 type="text"
@@ -135,7 +135,7 @@ placeholder="Ejemplo: Bases de Datos"
 required>
 
 <button type="submit" name="guardar" class="btn">
-✅ Guardar Curso
+Guardar Curso
 </button>
 
 </form>

@@ -102,7 +102,7 @@ tr:hover{
 <body>
 
 <div class="header">
-📚 Gestión de Cursos
+Gestión de Cursos
 </div>
 
 <div class="container">
@@ -110,11 +110,11 @@ tr:hover{
 <div class="top-buttons">
 
     <a href="index.php">
-        <button class="btn">🏠 Menú</button>
+        <button class="btn">Menú</button>
     </a>
 
     <a href="crear_curso.php">
-        <button class="btn">➕ Agregar Curso</button>
+        <button class="btn">Agregar Curso</button>
     </a>
 
 </div>

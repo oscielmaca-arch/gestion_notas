@@ -142,7 +142,7 @@ tr:hover{
 <body>
 
 <div class="header">
-📚 Gestión de Inscripciones
+Gestión de Inscripciones
 </div>
 
 <div class="container">
@@ -151,11 +151,11 @@ tr:hover{
 <div class="top-buttons">
 
     <a href="index.php">
-        <button class="btn">🏠 Menú</button>
+        <button class="btn">Menú</button>
     </a>
 
     <a href="inscripcion.php">
-        <button class="btn">➕ Nueva Inscripción</button>
+        <button class="btn">Nueva Inscripción</button>
     </a>
 
 </div>
@@ -199,13 +199,13 @@ tr:hover{
 <div class="card">
 
 <h2 class="section-title">
-✅ Estudiantes Inscritos
+Estudiantes Inscritos
 </h2>
 
 <input
 type="text"
 id="busqueda"
-placeholder="🔎 Buscar por código o nombre..."
+placeholder="Buscar por código o nombre..."
 style="
 width:100%;
 padding:12px;

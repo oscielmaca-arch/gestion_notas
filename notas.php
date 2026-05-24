@@ -53,7 +53,7 @@ if (isset($_POST['guardar'])) {
         INSERT INTO calificaciones (cod_cur, cod_est, year, periodo, cod_cohorte, nota)
         VALUES ($cod_cur, $cod_est, $year, '$periodo', $cod_cohorte, $nota)
         ");
-        echo "<p style='color:green;'>✅ Nota guardada</p>";
+        echo "<p style='color:green;'>Nota guardada</p>";
     }
 
     // Mantener selección
@@ -175,7 +175,7 @@ Registro de Notas
 <div class="top-buttons">
 
     <a href="index.php">
-        <button class="btn">🏠 Menú</button>
+        <button class="btn">Menú</button>
     </a>
 
     <a href="notas_registradas.php">
