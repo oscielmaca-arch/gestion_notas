@@ -4,7 +4,7 @@ include("conexion.php");
 // Si llega por POST desde AJAX, actualizar el nombre
 if(isset($_POST['cod_est'], $_POST['nomb_est'])){
     $cod_est = (int)$_POST['cod_est'];
-    $nomb_est = pg_escape_string($_POST['nomb_est']);
+    $nomb_est = pg_escape_string($conexion,$_POST['nomb_est']);
     $res = pg_query($conexion, "UPDATE estudiante SET nomb_est = '$nomb_est' WHERE cod_est = $cod_est");
     echo $res ? 'ok' : pg_last_error($conexion);
     exit;
