@@ -1,7 +1,6 @@
 <?php
 include("conexion.php");
 
-// Si llega por POST desde AJAX, actualizar el nombre
 if(isset($_POST['cod_est'], $_POST['nomb_est'])){
     $cod_est = (int)$_POST['cod_est'];
     $nomb_est = pg_escape_string($conexion,$_POST['nomb_est']);
@@ -10,7 +9,6 @@ if(isset($_POST['cod_est'], $_POST['nomb_est'])){
     exit;
 }
 
-// Si llega por GET (no es necesario en el flujo AJAX, opcional)
 if(!isset($_GET['cod_est'])){
     echo "<p>⚠ No se recibió el estudiante a editar.</p>";
     exit;

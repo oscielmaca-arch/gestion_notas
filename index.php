@@ -14,14 +14,12 @@ if (!isset($_SESSION['docente'])) {
 <title>Gestión de Notas - Unillanos</title>
 <style>
 
-/* Reset y fuente */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #f5f5f5;
 }
 
-/* Franja superior blanca con logo */
 .header-top {
     background-color: white;
     display: flex;

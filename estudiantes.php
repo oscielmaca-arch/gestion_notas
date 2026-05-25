@@ -1,7 +1,6 @@
 <?php
 include("conexion.php");
 
-// Traer todos los estudiantes
 $result = pg_query($conexion, "SELECT * FROM estudiante");
 ?>
 
@@ -20,7 +19,6 @@ body{
     padding:0;
 }
 
-/* Encabezado */
 .header{
     background-color:#B71C1C;
     color:white;
@@ -30,14 +28,12 @@ body{
     font-weight:bold;
 }
 
-/* Contenedor */
 .container{
     width:95%;
     max-width:1100px;
     margin:30px auto;
 }
 
-/* Tarjeta */
 .card{
     background:white;
     padding:25px;
@@ -45,7 +41,6 @@ body{
     box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-/* Botones */
 .btn{
     background-color:#B71C1C;
     color:white;
@@ -61,7 +56,6 @@ body{
     background-color:#8E0000;
 }
 
-/* Zona botones */
 .top-buttons{
     display:flex;
     justify-content:space-between;
@@ -70,7 +64,6 @@ body{
     gap:10px;
 }
 
-/* Tabla */
 table{
     width:100%;
     border-collapse:collapse;
@@ -92,19 +85,16 @@ tr:hover{
     background-color:#f9f9f9;
 }
 
-/* Nombre alineado */
 .nombre{
     text-align:left;
 }
 
-/* Acciones */
 .acciones{
     display:flex;
     justify-content:center;
     gap:8px;
 }
 
-/* Botones acción */
 .btn-edit{
     background-color:#1976D2;
 }
@@ -201,7 +191,6 @@ onclick="eliminarEstudiante(<?php echo $row['cod_est']; ?>)">
 
 <script>
 
-// Eliminar estudiante
 function eliminarEstudiante(cod_est){
 
     if(confirm('¿Eliminar este estudiante?')){
@@ -238,7 +227,6 @@ function eliminarEstudiante(cod_est){
 
 }
 
-// Editar estudiante
 function editarEstudiante(cod_est, nombre){
 
     let nuevoNombre = prompt(

@@ -1,10 +1,8 @@
 <?php
 include("conexion.php");
 
-// Capturar curso seleccionado
 $selected_course = isset($_POST['selected_course']) ? $_POST['selected_course'] : '';
 
-// Traer todos los cursos únicos
 $cursos_res = pg_query($conexion, "
 SELECT DISTINCT c.cod_cur, c.nomb_cur, i.year, i.periodo
 FROM cursos c
@@ -12,7 +10,6 @@ JOIN inscripciones i ON c.cod_cur = i.cod_cur
 ORDER BY c.nomb_cur, i.year, i.periodo
 ");
 
-// Construir consulta de notas
 $query = "
 SELECT
     e.cod_est,
@@ -32,7 +29,6 @@ JOIN cohortes co ON ca.cod_cohorte = co.cod_cohorte
 JOIN inscripciones i ON ca.cod_est = i.cod_est AND ca.cod_cur = i.cod_cur AND ca.year = i.year AND ca.periodo = i.periodo
 ";
 
-// Filtrar por curso si se seleccionó
 if($selected_course){
     list($cod_cur, $year, $periodo) = explode('|', $selected_course);
     $query .= " WHERE ca.cod_cur = $cod_cur AND ca.year = $year AND ca.periodo = '$periodo'";
@@ -42,7 +38,6 @@ $query .= " ORDER BY e.nomb_est, co.posicion";
 
 $res = pg_query($conexion, $query);
 
-// Organizar datos
 $datos = [];
 while($row = pg_fetch_assoc($res)){
     $key = $row['cod_est'].'-'.$row['cod_cur'].'-'.$row['year'].'-'.$row['periodo'];
