@@ -26,6 +26,7 @@ body {
     background-color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 10px 20px;
     border-bottom: 5px solid #B71C1C; /* Separador rojo */
 }
@@ -102,8 +103,28 @@ main {
 
 <!-- Franja superior con logo -->
 <div class="header-top">
-    <img src="logo_unillanos.png" alt="Logo Unillanos">
-    <h1>Gestión de Notas</h1>
+
+    <div style="display:flex; align-items:center; gap:15px;">
+        <img src="logo_unillanos.png" alt="Logo Unillanos">
+        <h1>Gestión de Notas</h1>
+    </div>
+
+    <div style="
+    background:#f4f4f4;
+    padding:10px 15px;
+    border-radius:10px;
+    font-size:14px;
+    text-align:right;
+    ">
+        <strong>Docente:</strong><br>
+        <?php echo $_SESSION['docente']; ?>
+
+        <br><br>
+
+        <strong>Código:</strong><br>
+        <?php echo $_SESSION['cod_doc']; ?>
+    </div>
+
 </div>
 
 <!-- Main con tarjetas -->
