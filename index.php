@@ -1,12 +1,20 @@
+
 <?php
-// index.php
+session_start();
+
+if (!isset($_SESSION['docente'])) {
+    header("Location: login.php");
+    exit();
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
 <meta charset="UTF-8">
 <title>Gestión de Notas - Unillanos</title>
 <style>
+
 /* Reset y fuente */
 body {
     margin: 0;
